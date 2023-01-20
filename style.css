@@ -29,6 +29,7 @@ body{
     border: none;
     background:#F3F5FC;
     margin: 30px;
+    
 }
 
 
@@ -110,6 +111,20 @@ body{
 #mensaje{
     font-size: 20px;
     font-weight: bold;
+}
+
+#copiar{
+    height: 67px;
+    width: 128px;
+    left: 0px;
+    top: 0px;
+    border-radius: 24px;
+    padding: 24px; 
+    background: #D8DFE8;
+    color:#0A3871;  
+    margin-top: 15px;
+    margin-left: 130px;
+   
 }
 
 @media screen and (max-width:480px) {
