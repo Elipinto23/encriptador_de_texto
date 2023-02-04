@@ -1,13 +1,11 @@
 window.onload = (event) => {
-    
-   
-    
     const botonDesencriptar = document.querySelector("#boton-encriptar");
+    
 };
 
 
 function encriptar(){
-    let texto1 = document.querySelector(".texto-para-encriptar").value.toLowerCase();
+    let texto1 = document.getElementById("texto-para-encriptar").value.toLowerCase();
 
     let textoEncriptado = texto1.replace(/e/img, "enter");
         textoEncriptado = textoEncriptado.replace(/o/img, "ober");
@@ -15,15 +13,18 @@ function encriptar(){
         textoEncriptado = textoEncriptado.replace(/a/img, "ai");
         textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
 
-       document.querySelector("#texto-para-desencriptar").value = textoEncriptado;
-       
-       document.getElementById("mensaje").style.display="none";
+       document.getElementById("texto-para-desencriptar").value = textoEncriptado;
+       document.getElementById("mensaje-no-encontrado").style.display="none";
+       document.getElementById("mensaje-ingresa-texto").style.display="none";
+       document.getElementById("img-descifrado").style.display="none";
+       document.getElementById("copiar").style.display="block";
+       document.getElementById("texto-para-desencriptar").style.display="block";
 
 }
 
 function desencriptar(){
 
-    let texto1 = document.querySelector(".texto-para-encriptar").value.toLowerCase();
+    let texto1 = document.getElementById("texto-para-encriptar").value.toLowerCase();
 
     let textoEncriptado = texto1.replace (/entre/img,"e");
         textoEncriptado = textoEncriptado.replace(/ober/img, "o");
