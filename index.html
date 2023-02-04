@@ -15,20 +15,23 @@
         <img class="logo" src="imagenes/Vector.png" alt="logo de alura" >
     </header>
     <main>
-        <section class="flex-item">
+        <section class="flex-item-left">
             <textarea class="text-area" id="texto-para-encriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                <h6 class="informacion"><img src="imagenes/signo.png"> Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
                 <button class="btn-encriptar" id="boton-encriptar" onclick="encriptar()">Encriptar</button>
                 <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </section>
-        <section class="flex-item">
-            <textarea class="mensaje" id="texto-para-desencriptar"  cols="20" rows="10"></textarea>
-            <div>
-                <button class="copiar" onclick="copiar()">Copiar</button>
+        <section class="flex-item-right area-descifrado">
+            <img id="img-descifrado" src="imagenes/dibujo.png">
+            <p id="mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
+            <p id="mensaje-ingresa-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea id="texto-para-desencriptar" cols="20" rows="10" readonly></textarea>
+            <div class="area-copiar">
+                <button class="copiar" id="copiar" onclick="copiar()">Copiar</button>
             </div>
         </section>
     </main>

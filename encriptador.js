@@ -1,5 +1,6 @@
 window.onload = (event) => {
     const botonDesencriptar = document.querySelector("#boton-encriptar");
+    
 };
 
 
@@ -13,8 +14,11 @@ function encriptar(){
         textoEncriptado = textoEncriptado.replace(/u/img, "ufat");
 
        document.getElementById("texto-para-desencriptar").value = textoEncriptado;
-       
-       //document.getElementById("mensaje").style.display="none";
+       document.getElementById("mensaje-no-encontrado").style.display="none";
+       document.getElementById("mensaje-ingresa-texto").style.display="none";
+       document.getElementById("img-descifrado").style.display="none";
+       document.getElementById("copiar").style.display="block";
+       document.getElementById("texto-para-desencriptar").style.display="block";
 
 }
 
